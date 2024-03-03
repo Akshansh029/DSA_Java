@@ -19,7 +19,7 @@ public class Deleting_Nodes{
             System.out.print(current.data +  " --> ");
             current = current.next;
         }
-        System.out.print("null");
+        System.out.println("null");
     }
 
     //deleting first node of singly linked list
@@ -35,11 +35,40 @@ public class Deleting_Nodes{
 
     //deleting last node of the list
     public ListNode deleteLast(){
-        if(head.next == null){
-            head = null;
+        if(head == null || head.next == null){
+            return head;
         }
-        ListNode previous = head;
-        while()
+        ListNode previous = null;
+        ListNode current = head;
+        while(current.next != null){
+            previous = current;
+            current = current.next;
+        }
+        previous.next = null;
+        return current;
+    }
+
+    //deleting node at a given position
+    public int deleteAt(int position){
+        if(position == 1){
+            ListNode temp = head;
+            head = head.next;
+            temp.next = null;
+            return temp.data;
+        }
+        else{
+            ListNode current = head;
+            ListNode previous = null;
+            int count = 1;
+            while(count < position){
+                previous = current;
+                current = current.next;
+                count++;
+            }
+            previous.next = current.next;
+            current.next = null;
+            return current.data;
+        }
     }
     public static void main(String[] args) {
         Deleting_Nodes dn = new Deleting_Nodes();
@@ -51,7 +80,11 @@ public class Deleting_Nodes{
         dn.head.next = second;
         second.next = third;
         third.next = fourth;
-        System.out.println(dn.deleteFirst().data);
+        // System.out.println(dn.deleteFirst().data);
+        // dn.printList();
+        // System.out.println(dn.deleteLast().data);
+        dn. printList();
+        System.out.println(dn.deleteAt(3));
         dn.printList();
     }
 }
