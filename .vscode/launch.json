@@ -1,0 +1,196 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "ArraySearch",
+      "request": "launch",
+      "mainClass": "Array.ArraySearch",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "MinimumValueOfArray",
+      "request": "launch",
+      "mainClass": "Array.MinimumValueOfArray",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "MissingNumInArray",
+      "request": "launch",
+      "mainClass": "Array.MissingNumInArray",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Palindrome",
+      "request": "launch",
+      "mainClass": "Array.Palindrome",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "RemoveEvenNum",
+      "request": "launch",
+      "mainClass": "Array.RemoveEvenNum",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "ResizingArray",
+      "request": "launch",
+      "mainClass": "Array.ResizingArray",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "ReversedArray",
+      "request": "launch",
+      "mainClass": "Array.ReversedArray",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "SecondMaxValue",
+      "request": "launch",
+      "mainClass": "Array.SecondMaxValue",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "ZeroesAtEnd",
+      "request": "launch",
+      "mainClass": "Array.ZeroesAtEnd",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "CheckPrime",
+      "request": "launch",
+      "mainClass": "CheckPrime",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "FirstClass",
+      "request": "launch",
+      "mainClass": "FirstClass",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "first",
+      "request": "launch",
+      "mainClass": "Java_Basics.first",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "typecasting",
+      "request": "launch",
+      "mainClass": "Java_Basics.typecasting",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "HollowReactangle",
+      "request": "launch",
+      "mainClass": "Patterns.HollowReactangle",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "InvertedLeftPyramid",
+      "request": "launch",
+      "mainClass": "Patterns.InvertedLeftPyramid",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "LeftPyramid",
+      "request": "launch",
+      "mainClass": "Patterns.LeftPyramid",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "SolidReactangle",
+      "request": "launch",
+      "mainClass": "Patterns.SolidReactangle",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "SecondClass",
+      "request": "launch",
+      "mainClass": "SecondClass",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Basics",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.Basics",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Deleting_Nodes",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.Deleting_Nodes",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Inserting_Nodes",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.Inserting_Nodes",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "NthNode_From_End",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.NthNode_From_End",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "ReversingList",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.ReversingList",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "searchingElement",
+      "request": "launch",
+      "mainClass": "Simple_Singly_Linked_List.searchingElement",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "SumOfNums",
+      "request": "launch",
+      "mainClass": "SumOfNums",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "ThirdClass",
+      "request": "launch",
+      "mainClass": "ThirdClass",
+      "projectName": "DSA in Java_cd8015d9"
+    }
+  ]
+}
