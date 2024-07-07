@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "scannerClass",
+      "request": "launch",
+      "mainClass": "JavaBasics.scannerClass",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
