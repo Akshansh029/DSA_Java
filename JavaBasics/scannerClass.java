@@ -27,5 +27,6 @@ public class scannerClass {
         System.out.print("Enter the char: ");
         char c = sc.next().charAt(0);
         System.out.println(c);
+        sc.close();
     }
 }
