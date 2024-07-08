@@ -70,5 +70,6 @@ public class homeworkProblems {
         for (int element : arr) {
             System.out.print(element + " ");
         }
+        sc.close();
     }
 }
