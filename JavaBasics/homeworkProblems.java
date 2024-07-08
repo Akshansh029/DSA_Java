@@ -39,18 +39,36 @@ public class homeworkProblems {
         //     }
         // }
         //Problem-3: Given an array, find the maximum and the minimum elements in it.
-        int minNum = Integer.MAX_VALUE;
-        int maxNum = Integer.MIN_VALUE;
+        // int minNum = Integer.MAX_VALUE;
+        // int maxNum = Integer.MIN_VALUE;
+        // System.out.print("Enter the size of the array: ");
+        // int num = sc.nextInt();
+        // int[] arr = new int[num];
+        // for (int i = 0; i < arr.length; i++) {
+        //     arr[i] = sc.nextInt();
+        //     maxNum = Math.max(arr[i], maxNum);
+        //     minNum = Math.min(arr[i], minNum);
+        // }
+        // System.out.println("The maximum integer in the array is " + maxNum);
+        // System.out.println("The minimum integer in the array is " + minNum);
+        //Problem-4: Reverse of an array
         System.out.print("Enter the size of the array: ");
         int num = sc.nextInt();
         int[] arr = new int[num];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
-            maxNum = Math.max(arr[i], maxNum);
-            minNum = Math.min(arr[i], minNum);
         }
 
-        System.out.println("The maximum integer in the array is " + maxNum);
-        System.out.println("The minimum integer in the array is " + minNum);
+        int temp;
+        for (int j = 0; j < arr.length / 2; j++) {
+            temp = arr[j];
+            arr[j] = arr[arr.length - 1 - j];
+            arr[arr.length - 1 - j] = temp;
+        }
+
+        System.out.print("Reversed array: ");
+        for (int element : arr) {
+            System.out.print(element + " ");
+        }
     }
 }
