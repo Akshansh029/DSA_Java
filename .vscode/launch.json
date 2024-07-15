@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "factorial",
+      "request": "launch",
+      "mainClass": "JavaBasics.factorial",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "scannerClass",
       "request": "launch",
       "mainClass": "JavaBasics.scannerClass",
