@@ -1,8 +1,9 @@
 package JavaBasics;
 
+// package JavaBasics;
 import java.util.Scanner;
 
-public class arrays {
+public class Ayush {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

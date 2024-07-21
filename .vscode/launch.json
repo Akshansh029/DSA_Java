@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ayush",
+      "request": "launch",
+      "mainClass": "JavaBasics.Ayush",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "isValidPalindrome",
       "request": "launch",
       "mainClass": "LeetCode.isValidPalindrome",
