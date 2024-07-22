@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "asciiValue",
+      "request": "launch",
+      "mainClass": "asciiValue",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Ayush",
+      "request": "launch",
+      "mainClass": "Ayush",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "Ayush",
       "request": "launch",
       "mainClass": "JavaBasics.Ayush",
