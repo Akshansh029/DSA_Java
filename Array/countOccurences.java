@@ -1,4 +1,4 @@
-package Array;
+// package Array;
 
 public class countOccurences {
 
@@ -14,7 +14,7 @@ public class countOccurences {
 
     public static void main(String[] args) {
         int[] arr1 = {2, 7, 2, 7, 6, 9, 3, 2, 7, 2, 1};
-        int count = countInt(arr1, 12);
-        System.out.printf("The number of times 12 occured: %d", count);
+        int count = countInt(arr1, 3);
+        System.out.printf("The number of times 3 occured: %d", count);
     }
 }
