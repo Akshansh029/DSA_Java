@@ -1,2 +1,2 @@
-
-    }
+mOfArray(arr);
+        printArray(suff);
