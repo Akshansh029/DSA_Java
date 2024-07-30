@@ -22,22 +22,23 @@ public class QueryPrefixSum {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] arr = {2, 7, 3, 5, 9, 8, 1};
+        try (Scanner sc = new Scanner(System.in)) {
+            int[] arr = {2, 7, 3, 5, 9, 8, 1};
 
-        int[] pref = prefixSumOfArray(arr);
-        printArray(pref);
+            int[] pref = prefixSumOfArray(arr);
+            printArray(pref);
 
-        System.out.print("Enter the number of queries: ");
-        int queries = sc.nextInt();
+            System.out.print("Enter the number of queries: ");
+            int queries = sc.nextInt();
 
-        while (queries > 0) {
-            System.out.print("Enter the range for the query: ");
-            int start = sc.nextInt();
-            int end = sc.nextInt();
-            int ans = pref[end] - pref[start - 1];
-            System.out.println("Sum: " + ans);
-            queries--;
+            while (queries > 0) {
+                System.out.print("Enter the range for the query: ");
+                int start = sc.nextInt();
+                int end = sc.nextInt();
+                int ans = pref[end] - pref[start - 1];
+                System.out.println("Sum: " + ans);
+                queries--;
+            }
         }
     }
 }

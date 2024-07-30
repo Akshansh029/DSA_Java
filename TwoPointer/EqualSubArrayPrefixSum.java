@@ -2,13 +2,6 @@
 
 public class EqualSubArrayPrefixSum {
 
-    static void printArray(int[] arr) {
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
-        System.out.println();
-    }
-
     static int totalSum(int[] arr) {
         int sum = 0;
 

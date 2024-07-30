@@ -1,2 +1,0 @@
-mOfArray(arr);
-        printArray(suff);
