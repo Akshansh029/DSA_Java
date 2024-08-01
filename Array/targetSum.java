@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class targetSum {
 
+    //Brute force
     static int pairFinder(int[] arr, int num) {
         int pairs = 0;
         for (int i = 0; i < arr.length; i++) {
