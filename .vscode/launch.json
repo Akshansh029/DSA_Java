@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Basics",
+      "request": "launch",
+      "mainClass": "Basics",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "asciiValue",
       "request": "launch",
       "mainClass": "asciiValue",
