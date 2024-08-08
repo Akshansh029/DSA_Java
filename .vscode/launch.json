@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "BinarySearch",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "MaxIn2DArray",
       "request": "launch",
       "mainClass": "MaxIn2DArray",
