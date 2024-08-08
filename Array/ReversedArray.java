@@ -17,12 +17,12 @@ public class ReversedArray {
             arr[arr.length - 1 - i] = temp;
         }
         for (int element : arr) {
-            System.out.print(element + " ");
+            System.out.print(element + ", ");
         }
     }
 
     public static void main(String args[]) {
-        int[] arr = {2, 62, 5, 68, 3, 42, 46, 68, 3, 53, 68, 798, 13};
+        int[] arr = {12, 23, 34, 45, 56, 67, 78, 89, 90};
         // ReversedArray.reverseArray(arr, 0, arr.length - 1);
         reverseArray(arr);
     }
