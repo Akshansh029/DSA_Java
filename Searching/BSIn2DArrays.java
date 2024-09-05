@@ -32,9 +32,9 @@ public class BSIn2DArrays {
 
         int[][] arr = new int[n][n];
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int[] arr1 : arr) {
             for (int j = 0; j < arr.length; j++) {
-                arr[i][j] = sc.nextInt();
+                arr1[j] = sc.nextInt();
             }
         }
 
@@ -55,5 +55,6 @@ public class BSIn2DArrays {
             System.out.print(i + " ");
         }
 
+        sc.close();
     }
 }

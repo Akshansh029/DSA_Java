@@ -1,4 +1,4 @@
-package JavaBasics;
+// package JavaBasics;
 
 import java.util.Scanner;
 //Write a program to return a string from a given string s where all occurrences of the first char of the string except the first occurrence have been changed to '$'.

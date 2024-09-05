@@ -24,7 +24,7 @@ public class BuySellStocks {
     }
 
     public static void main(String[] args) {
-        int[] prices = {7, 1, 5, 3, 6, 4};
+        // int[] prices = {7, 1, 5, 3, 6, 4};
         int[] prices1 = {2, 4, 1};
         System.out.println(maxProfit(prices1));
     }
