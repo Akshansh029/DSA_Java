@@ -7,13 +7,12 @@ class LeetCode268 {
         int i = 0;
         while (i < N) {
             int correct = nums[i];
-
-            if (i == nums[i] || nums[i] >= N) {
-                i++;
-            } else {
+            if (nums[i] < N && nums[correct] != nums[i]) {
                 int temp = nums[i];
                 nums[i] = nums[correct];
                 nums[correct] = temp;
+            } else {
+                i++;
             }
         }
 
