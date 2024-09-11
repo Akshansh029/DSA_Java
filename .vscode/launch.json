@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LeetCode268",
+      "request": "launch",
+      "mainClass": "LeetCode268",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "CeilingOfNumber",
       "request": "launch",
       "mainClass": "CeilingOfNumber",
