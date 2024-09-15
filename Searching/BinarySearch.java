@@ -23,7 +23,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int[] arr = {12, 23, 34, 45, 56, 67, 78, 89, 90};
-        int target = 349;
+        int target = 78;
         System.out.println("The required answer is " + binarySearch(arr, target));
     }
 }
