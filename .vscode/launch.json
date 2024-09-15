@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SumTriangleFromArray",
+      "request": "launch",
+      "mainClass": "Recursion.SumTriangleFromArray",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "LeetCode268",
       "request": "launch",
       "mainClass": "LeetCode268",
