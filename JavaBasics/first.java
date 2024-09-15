@@ -1,4 +1,3 @@
-// package JavaBasics;
 
 public class first {
 

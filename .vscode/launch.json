@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SortingSentence",
+      "request": "launch",
+      "mainClass": "SortingSentence",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "SumTriangleFromArray",
       "request": "launch",
       "mainClass": "Recursion.SumTriangleFromArray",
