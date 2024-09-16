@@ -9,10 +9,9 @@ public class ValidPalindrome {
         while (l <= r) {
             if (newStr.charAt(l) != newStr.charAt(r)) {
                 return false;
-            } else {
-                l++;
-                r--;
             }
+            l++;
+            r--;
         }
 
         return true;
@@ -20,19 +19,20 @@ public class ValidPalindrome {
 
     public static String removeChar(String s) {
         s = s.toLowerCase();
-        String newStr = "";
+        StringBuilder newStr = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
             if (Character.isLetter(s.charAt(i))) {
-                newStr += s.charAt(i);
+                newStr.append(s.charAt(i));
             }
         }
 
-        return newStr;
+        return newStr.toString();
     }
 
     public static void main(String[] args) {
-        boolean ans = isPalindrome(" ");
+        boolean ans = isPalindrome("0P");
+        
         System.out.println(ans);
     }
 }
