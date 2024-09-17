@@ -22,7 +22,7 @@ public class ValidPalindrome {
         StringBuilder newStr = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
-            if (Character.isLetter(s.charAt(i))) {
+            if (Character.isLetter(s.charAt(i)) || Character.isDigit(s.charAt(i))) {
                 newStr.append(s.charAt(i));
             }
         }
@@ -31,8 +31,8 @@ public class ValidPalindrome {
     }
 
     public static void main(String[] args) {
-        boolean ans = isPalindrome("0P");
-        
+        boolean ans = isPalindrome("a");
+
         System.out.println(ans);
     }
 }
