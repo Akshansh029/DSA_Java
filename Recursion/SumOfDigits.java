@@ -12,7 +12,14 @@ public class SumOfDigits {
         return n % 10 + sumOfDigits(n / 10);
     }
 
+    static int prodOfDigits(int n) {
+        if (n % 10 == n) {
+            return n;
+        }
+        return n % 10 * prodOfDigits(n / 10);
+    }
+
     public static void main(String[] args) {
-        System.out.println(sumOfDigits(1342));
+        System.out.println(prodOfDigits(1342));
     }
 }
