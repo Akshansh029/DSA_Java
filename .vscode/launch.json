@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Practice",
+      "request": "launch",
+      "mainClass": "Practice",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
+      "name": "Hour_glass_sum",
+      "request": "launch",
+      "mainClass": "Hour_glass_sum",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "SortingSentence",
       "request": "launch",
       "mainClass": "SortingSentence",
