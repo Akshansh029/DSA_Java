@@ -29,7 +29,7 @@ public class Main {
             int c = sc.nextInt();
 
             // Check if the place is not already filled
-            if (r < 2 && c < 2 && board[r][c] == ' ') {
+            if (r < 3 && c < 3 && board[r][c] == ' ') {
                 board[r][c] = player; // place the element
 
                 gameOver = haveWon(board, player);
