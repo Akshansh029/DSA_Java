@@ -36,7 +36,7 @@ public class Group {
     }
 
     public Team[] getQualifiedTeams() {
-        Arrays.sort(teams, Comparator.comparingInt((Team t) -> t.points).thenComparingInt(t -> t.goalsScored).reversed());
+        Arrays.sort(teams, Comparator.comparingInt((Team t) -> t.getPoints()).thenComparingInt(t -> t.getGoalsScored()).reversed());
         return new Team[]{teams[0], teams[1]};
     }
 }
