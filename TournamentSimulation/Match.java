@@ -63,7 +63,7 @@ public class Match {
         team1.addGoalsScored(scoreTeam1);
         team2.addGoalsScored(scoreTeam2);
 
-        System.out.println(team1.getTeamName() + " " + scoreTeam1 + " - " + scoreTeam2 + " " + team2.getTeamName());
+        System.out.println(team1.getTeamName() + " (" + scoreTeam1 + " - " + scoreTeam2 + ") " + team2.getTeamName());
     }
 
     // Get the summary of a knockout match

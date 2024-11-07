@@ -39,23 +39,35 @@ public class Tournament {
             Team qTeam2 = group.getQualifiedTeams()[1];
             knockTeams.add(qTeam1);
             knockTeams.add(qTeam2);
-            System.out.println(String.format("Qualified teams of %s:\n", group.groupName) + qTeam1 + " and " + qTeam2);
+            System.out.println(String.format("Qualified teams of %s:", group.groupName));
+            System.out.println(qTeam1);
+            System.out.println(qTeam2);
             System.out.println();
         }
     }
 
     public void playKnockouts() {
         // Quaterfinal matches
+        System.out.println("Teams qualified for Quaterfinals: ");
+        for (int i = 0; i < knockTeams.size(); i++) {
+            System.out.print(knockTeams.get(i).getTeamName() + " ");
+        }
+        System.out.println();
         List<Team> quarterFinalWinners = new ArrayList<>();
-
         for (int i = 0; i < knockTeams.size(); i += 2) {
             Match match = new Match(knockTeams.get(i), knockTeams.get(i + 1));
             match.simulateKnockOut();
             String winner = match.getKnockOutSummary();
             quarterFinalWinners.add(winner.equals(knockTeams.get(i).getTeamName()) ? knockTeams.get(i) : knockTeams.get(i + 1));
         }
+        System.out.println();
 
         // Semifinal matches
+        System.out.println("Teams qualified for Semifinals: ");
+        for (int i = 0; i < quarterFinalWinners.size(); i++) {
+            System.out.print(quarterFinalWinners.get(i).getTeamName() + " ");
+        }
+        System.out.println();
         List<Team> semiFinalWinners = new ArrayList<>();
 
         for (int i = 0; i < quarterFinalWinners.size(); i += 2) {
@@ -64,8 +76,14 @@ public class Tournament {
             String winner = match.getKnockOutSummary();
             semiFinalWinners.add(winner.equals(quarterFinalWinners.get(i).getTeamName()) ? quarterFinalWinners.get(i) : quarterFinalWinners.get(i + 1));
         }
+        System.out.println();
 
         // Final
+        System.out.print("Finalists: ");
+        for (int i = 0; i < semiFinalWinners.size(); i++) {
+            System.out.print(semiFinalWinners.get(i).getTeamName() + " ");
+        }
+        System.out.println();
         Team winner = null;
         if (semiFinalWinners.size() == 2) {
             Match finalMatch = new Match(semiFinalWinners.get(0), semiFinalWinners.get(1));
@@ -73,7 +91,8 @@ public class Tournament {
             winner = finalMatch.getKnockOutSummary().equals(semiFinalWinners.get(0).getTeamName()) ? semiFinalWinners.get(0) : semiFinalWinners.get(1);
         }
 
-        finalWinner = winner.getTeamName(); // Set the final winner
+        System.out.println();
+        finalWinner = winner.getTeamName();
     }
 
     public String getFinalWinner() {
