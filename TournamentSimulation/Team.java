@@ -51,6 +51,6 @@ public class Team {
 
     @Override
     public String toString() {
-        return "Team: " + teamName + ", Points: " + points + ", Goals Scored: " + goalsScored;
+        return teamName + ", Points: " + points + ", Goals Scored: " + goalsScored;
     }
 }

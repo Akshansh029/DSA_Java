@@ -25,8 +25,9 @@ public class Match {
             team1.addPoints(1);
             team2.addPoints(1);
         }
-        System.out.println(team1.getTeamName() + " " + scoreTeam1 + " - " + scoreTeam2
-                + " " + team2.getTeamName());
+        System.out.println(team1.getTeamName() + " (" + scoreTeam1 + " - " + scoreTeam2
+                + ") " + team2.getTeamName());
+        System.out.println("Match winner/result: " + getMatchSummary());
     }
 
     public String getMatchSummary() {

@@ -30,9 +30,9 @@ public class Group {
     }
 
     public void updateStandings() {
-        for (Match match : matches) {
-            System.out.println("Match winner/result: " + match.getMatchSummary());
-        }
+        // for (Match match : matches) {
+        //     System.out.println("Match winner/result: " + match.getMatchSummary());
+        // }
     }
 
     public Team[] getQualifiedTeams() {

@@ -8,12 +8,12 @@ public class Tournament {
     List<Group> groups = new ArrayList<>();
     List<Team> knockTeams = new ArrayList<>();
     List<Match> knockoutMatches = new ArrayList<>();
-    String finalWinner;
+    private String finalWinner;
 
     // Creating 16 teams
     public void createTeams() {
         for (int i = 0; i < 16; i++) {
-            teams.add(new Team(String.format("Team %d", i)));
+            teams.add(new Team(String.format("Team %d", i + 1)));
         }
     }
 
@@ -25,7 +25,6 @@ public class Tournament {
             for (int j = 0; j < 4; j++) {
                 groupTeams[j] = teams.get(i * 4 + j);
             }
-            // Create new group
             Group group = new Group("Group " + (char) ('A' + i), groupTeams);
             groups.add(group);
         }
@@ -33,12 +32,15 @@ public class Tournament {
 
     public void playGroupStages() {
         for (Group group : groups) {
+            System.out.println(String.format("%s results: ", group.groupName));
             group.createMatches();
-            group.updateStandings();
+            System.out.println();
             Team qTeam1 = group.getQualifiedTeams()[0];
             Team qTeam2 = group.getQualifiedTeams()[1];
             knockTeams.add(qTeam1);
             knockTeams.add(qTeam2);
+            System.out.println(String.format("Qualified teams of %s:\n", group.groupName) + qTeam1 + " and " + qTeam2);
+            System.out.println();
         }
     }
 
@@ -74,6 +76,7 @@ public class Tournament {
         finalWinner = winner.getTeamName(); // Set the final winner
     }
 
-    // public void determineTopScorer() {
-    // }
+    public String getFinalWinner() {
+        return finalWinner;
+    }
 }
