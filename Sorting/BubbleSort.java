@@ -23,7 +23,7 @@ public class BubbleSort {
                 }
             }
 
-            // Break if the array is already sorted based on the boolean 
+            // Break if the array is already sorted based on the boolean
             if (!swapped) {
                 break;
             }
