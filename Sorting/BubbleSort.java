@@ -8,7 +8,7 @@ public class BubbleSort {
         boolean swapped;
 
         // Run the steps N - 1 times
-        for (int i = 0; i < N - 1; i++) {
+        for (int i = 0; i < N; i++) {
             swapped = false; // Checking if swapping occured or not
 
             // For each step largest element will come at last index
