@@ -53,6 +53,74 @@ public class CustomLL {
         }
     }
 
+    public void deleteFirst() {
+        head = head.next;
+        if (head == null) {
+            tail = null;
+        }
+        size--;
+    }
+
+    public void deleteAtIndex(int index) {
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+        if (index == size - 1) {
+            deleteLast();
+            return;
+        }
+        Node prev = get(index - 1);
+        Node next = get(index + 1);
+
+        prev.next = prev.next.next;
+        size--;
+    }
+
+    public void deleteLast() {
+        if (size <= 1) {
+            deleteFirst();
+            return;
+        }
+        Node curr = get(size - 2);
+
+        tail = curr;
+        tail.next = null;
+        size--;
+    }
+
+    public Node find(int value) {
+        Node curr = head;
+
+        while (curr.next != null) {
+            if (curr.value == value) {
+                return curr;
+            }
+            curr = curr.next;
+        }
+
+        return null;
+    }
+
+    public int getIndex(int value) {
+        Node curr = head;
+        for (int i = 0; i < size; i++) {
+            if (curr.value == value) {
+                return i;
+            }
+            curr = curr.next;
+        }
+        return -1;
+    }
+
+    public Node get(int index) {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
     public void print() {
         Node current = this.head;
 

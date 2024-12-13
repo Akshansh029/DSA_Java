@@ -11,6 +11,19 @@ public class Main {
         list.insertAtLast(50);
         list.insertAtIndex(30, 2);
         list.print();
+        // list.deleteFirst();
+        // System.out.println();
+        // list.print();
+        // System.out.println();
+        // list.deleteLast();
+        // list.print();
+        // System.out.println();
+        // list.deleteAtIndex(2);
+        // list.print();
+
+        System.out.println(list.find(20));
+        System.out.println(list.getIndex(20));
+        System.out.println(list.getIndex(40));
 
         LinkedList<Integer> list1 = new LinkedList<>();
 
@@ -19,10 +32,5 @@ public class Main {
         list1.add(3);
         list1.add(4);
         list1.add(5);
-
-        // for (int i = 0; i < list1.size(); i++) {
-        //     System.out.print(list1.get(i) + " -> ");
-        // }
-        // System.out.print("null");
     }
 }
