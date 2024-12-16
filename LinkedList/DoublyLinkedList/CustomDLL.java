@@ -76,6 +76,17 @@ public class CustomDLL {
         System.out.println("null");
     }
 
+    public Node get(int target) {
+        Node curr = head;
+        while (curr != null) {
+            if (curr.value == target) {
+                return curr;
+            }
+            curr = curr.next;
+        }
+        return null;
+    }
+
     private class Node {
 
         private int value;
