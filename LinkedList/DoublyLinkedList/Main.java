@@ -8,7 +8,11 @@ public class Main {
         list.insertAtFirst(3);
         list.insertAtFirst(4);
         list.insertAtFirst(5);
+        // list.print();
+        // // list.reverse();
+        list.insertAtLast(0);
         list.print();
-        list.reverse();
+        list.insertAtIndex(10, 3);
+        list.print();
     }
 }

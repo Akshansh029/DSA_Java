@@ -14,6 +14,44 @@ public class CustomDLL {
         head = newNode;
     }
 
+    public void insertAtIndex(int value, int index) {
+
+        if (index == 0) {
+            insertAtFirst(value);
+            return;
+        }
+        Node curr = head;
+
+        for (int i = 1; i < index; i++) {
+            curr = curr.next;
+        }
+
+        if (curr.next == null) {
+            insertAtLast(value);
+        } else {
+            Node newNode = new Node(value, curr.next, curr);
+            curr.next.prev = newNode;
+            curr.next = newNode;
+        }
+    }
+
+    public void insertAtLast(int value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            newNode.prev = null;
+            return;
+        }
+
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+        newNode.prev = current;
+        newNode.next = null;
+    }
+
     public void print() {
         Node current = this.head;
         while (current != null) {

@@ -27,7 +27,7 @@ public class CustomLL {
             return;
         }
         if (index == size) {
-            insertAtIndex(value, index);
+            insertAtLast(value);
             return;
         }
         Node curr = head;
