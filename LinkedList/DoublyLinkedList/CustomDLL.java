@@ -52,6 +52,32 @@ public class CustomDLL {
         newNode.next = null;
     }
 
+    public void deleteAtBeginning() {
+        if (head == null) {
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        head.next.prev = null;
+        head = head.next;
+    }
+
+    public void deleteNode(int index) {
+        if (index == 0) {
+            deleteAtBeginning();
+            return;
+        }
+
+        Node curr = head;
+        for (int i = 0; curr != null && i < index; i++) {
+            curr = curr.next;
+        }
+        curr.prev.next = curr.next;
+        curr.next.prev = curr.prev;
+    }
+
     public void print() {
         Node current = this.head;
         while (current != null) {

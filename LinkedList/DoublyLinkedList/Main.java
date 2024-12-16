@@ -12,7 +12,9 @@ public class Main {
         // // list.reverse();
         list.insertAtLast(0);
         list.print();
-        list.insertAtIndex(10, 3);
+        // list.insertAtIndex(10, 3);
+        // list.deleteAtBeginning();
+        list.deleteNode(2);
         list.print();
     }
 }

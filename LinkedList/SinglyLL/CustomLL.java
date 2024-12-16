@@ -71,8 +71,6 @@ public class CustomLL {
             return;
         }
         Node prev = get(index - 1);
-        Node next = get(index + 1);
-
         prev.next = prev.next.next;
         size--;
     }
