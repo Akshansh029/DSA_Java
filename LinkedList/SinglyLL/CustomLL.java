@@ -20,6 +20,22 @@ public class CustomLL {
         size++;
     }
 
+    // insertion using recursion
+    public void insertRec(int index, int val) {
+        head = insertRec(index, val, head);
+    }
+
+    public Node insertRec(int index, int val, Node node) {
+        if (index == 0) {
+            Node newNode = new Node(val, node.next);
+            size++;
+            return newNode;
+        }
+        node.next = insertRec(index - 1, val, node.next);
+        System.out.println(node.value);
+        return node;
+    }
+
     public void insertAtIndex(int value, int index) {
 
         if (index == 0) {
@@ -127,9 +143,28 @@ public class CustomLL {
             current = current.next;
         }
 
-        System.out.print("null");
+        System.out.println("null");
     }
 
+    // remove duplicates
+    public void removeDuplicate() {
+        if (head == null) {
+            return;
+        }
+        Node current = head;
+        while (current.next != null) {
+            if (current.next != null && current.next.value == current.value) {
+                current.next = current.next.next;
+                size--;
+            } else {
+                current = current.next;
+            }
+        }
+        tail = current;
+        tail.next = null;
+    }
+
+    // merge two sorted lists
     private class Node {
 
         private int value;
