@@ -165,6 +165,43 @@ public class CustomLL {
     }
 
     // merge two sorted lists
+    public static CustomLL mergeTwoLists(CustomLL list1, CustomLL list2) {
+        if (list1 == null && list2 == null) {
+            return list1;
+        }
+        if (list1 == null) {
+            return list2;
+        }
+        if (list2 == null) {
+            return list1;
+        }
+
+        Node head1 = list1.head;
+        Node head2 = list2.head;
+        CustomLL ans = new CustomLL();
+        while (head1 != null && head2 != null) {
+            if (head1.value < head2.value) {
+                ans.insertAtLast(head1.value);
+                head1 = head1.next;
+            } else {
+                ans.insertAtLast(head2.value);
+                head2 = head2.next;
+            }
+        }
+
+        while (head1 != null) {
+            ans.insertAtLast(head1.value);
+            head1 = head1.next;
+        }
+
+        while (head2 != null) {
+            ans.insertAtLast(head2.value);
+            head2 = head2.next;
+        }
+
+        return ans;
+    }
+
     private class Node {
 
         private int value;
