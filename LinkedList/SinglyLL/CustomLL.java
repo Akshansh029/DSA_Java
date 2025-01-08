@@ -221,6 +221,83 @@ public class CustomLL {
         return false;
     }
 
+    // Find length of the cycle in LL
+    public static int lengthCycle(Node head) {
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                int count = 0;
+                do {
+                    count++;
+                    slow = slow.next;
+                } while (slow != fast);
+                return count;
+            }
+        }
+        return 0;
+    }
+
+    // Finding the starting node of the cycle
+    public Node detectCycle(Node head) {
+        // Fast and slow pointer method
+        if (head == null || head.next == null) {
+            return null;
+        }
+
+        Node fast = head;
+        Node slow = head;
+        Node node = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                break;
+            }
+        }
+
+        if (fast != slow) {
+            return null;
+        }
+
+        while (node != slow) {
+            node = node.next;
+            slow = slow.next;
+        }
+        return node;
+    }
+
+    // Middle node of the LL
+    public static Node middleNode(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+
+        return slow;
+    }
+
+    // Sorting LL
+    public static void sort(CustomLL list) {
+        if (list.head == null || list.head.next == null) {
+            return;
+        }
+        Node curr = list.head;
+        while (curr.next != null) {
+
+        }
+    }
+
     private class Node {
 
         private int value;
