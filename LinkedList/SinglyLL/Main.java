@@ -42,7 +42,6 @@ public class Main {
         list2.insertAtLast(4);
         CustomLL ans = CustomLL.mergeTwoLists(list1, list2);
         ans.print();
-
         LinkedList<Integer> list = new LinkedList<>();
 
         list.add(1);

@@ -288,14 +288,67 @@ public class CustomLL {
     }
 
     // Sorting LL
-    public static void sort(CustomLL list) {
-        if (list.head == null || list.head.next == null) {
+    public void bubbleSort(int r, int c) {
+        if (r == 0) {
             return;
         }
-        Node curr = list.head;
-        while (curr.next != null) {
+        if (c < r) {
+            Node first = get(c);
+            Node second = get(c + 1);
 
+            if (first.value < second.value) {
+                if (first == head) {
+                    second = head;
+                    first.next = second.next;
+                    second.next = first;
+                } else if (second == tail) {
+                    Node prev = get(c - 1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    tail.next = first;
+                } else {
+                    Node prev = get(c - 1);
+                    first.next = second.next;
+                    prev.next = second;
+                }
+            }
+            bubbleSort(r, c + 1);
+        } else {
+            bubbleSort(r - 1, 0);
         }
+    }
+
+    // Reversing a LL using recursion
+    public void recursiveReverse(Node node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+        recursiveReverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
+
+    // Reversing a LL using iterative method
+    public void iterativeReverse() {
+        if (size < 2) {
+            return;
+        }
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
+
+        while (present != null) {
+            present.next = prev;
+            prev = present;
+            present = next;
+            if (next != null) {
+                next = next.next;
+            }
+        }
+        head = prev;
     }
 
     private class Node {
