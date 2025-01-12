@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QueueMain",
+      "request": "launch",
+      "mainClass": "Stacks_Queues.QueueMain",
+      "projectName": "DSA in Java_cd8015d9"
+    },
+    {
+      "type": "java",
       "name": "BubbleSort",
       "request": "launch",
       "mainClass": "Recursion.Sorting.BubbleSort",
