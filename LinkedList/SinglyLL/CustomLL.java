@@ -1,4 +1,4 @@
-
+    
 public class CustomLL {
 
     private Node head;
@@ -272,7 +272,7 @@ public class CustomLL {
     }
 
     // Middle node of the LL
-    public static Node middleNode(Node head) {
+    public Node middleNode(Node head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -349,6 +349,45 @@ public class CustomLL {
             }
         }
         head = prev;
+    }
+
+    // If LL is Palindrome
+    // public boolean isPalindrome(Node head) {
+    //     if(head == null){
+    //         return false;
+    //     }
+    //     Node mid = middleNode(head);
+    //     Node secondHead = iterativeReverse(mid);
+    //     Node reverseHead = secondHead;
+    //     while(head != null && secondHead != null){
+    //         if(head.val != secondHead.val){
+    //             return false;
+    //         }
+    //         head = head.next;
+    //         secondHead = secondHead.next;
+    //     }
+    //     iterativeReverse(reverseHead);
+    //     return true;
+    // }
+    // Rotating a LL
+    public void rotate(Node head, int k) {
+        if (k <= 0 || head == null || head.next == null) {
+            return;
+        }
+        int count = 0;
+        Node curr = head;
+        while (curr != null) {
+            count++;
+            curr = curr.next;
+        }
+        curr.next = head;
+        Node newCurr = head;
+        for (int i = 1; i < count - (k % count); i++) {
+            newCurr = newCurr.next;
+        }
+
+        head = newCurr.next;
+        newCurr.next = null;
     }
 
     private class Node {
